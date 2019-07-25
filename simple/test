@@ -1,0 +1,19 @@
+curl -X POST -H "Authorization: key=AIzaSyBbpKV4v-P6MDyV3zdVXQf19AaIbnBVfJQ" -H "Content-Type: application/json" -d '{
+  "notification": {
+    "title": "Portugal vs. Denmark",
+    "body": "5 to 1",
+    "icon": "firebase-logo.png",
+    "click_action": "http://localhost:8081"
+  },
+  "to": "dS4sWzT_BD8:APA91bHvT92yEU8bB9CpiniSL5VcRfQQJSqAzrNvqsJVnDUPOzaktfKqy9JbrVjoND1oLx09-TKmMiVkCZ7cxv4GZiNcbFKs1pwgNFGjgALMsvccye-XXdT8W52NMpCngxuc0hGDB7e7"
+}' "https://fcm.googleapis.com/fcm/send"
+
+curl -X POST -H "Authorization: key=AIzaSyBbpKV4v-P6MDyV3zdVXQf19AaIbnBVfJQ" -H "Content-Type: application/json" -d '{
+  "notification": {
+    "title": "Portugal vs. Denmark",
+    "body": "5 to 1",
+    "icon": "AA1900271徐嘉琪.jpg",
+    "click_action": "http://localhost:8081"
+  },
+  "to": "dS4sWzT_BD8:APA91bHvT92yEU8bB9CpiniSL5VcRfQQJSqAzrNvqsJVnDUPOzaktfKqy9JbrVjoND1oLx09-TKmMiVkCZ7cxv4GZiNcbFKs1pwgNFGjgALMsvccye-XXdT8W52NMpCngxuc0hGDB7e7"
+}' "https://fcm.googleapis.com/fcm/send"

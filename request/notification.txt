@@ -1,0 +1,32 @@
+{
+	"to": "e6P0Nll0wwk:APA91bFql2jmS0IKonlDr5JvsAz3Wu3Z5dGYThcCaADkGCXJinyASSgiQL1wo7EfA89z3ALP0Rm_E1t90ZQjgOyFu_k6Jtm3HKM9Uxo9NS9M8m8m5vKUORBQcR4jrkpgTXbCTYH2EVny"
+	"notification":{
+		"title": "Hello",
+		"body": "World"
+	}
+}
+通知
+curl --header "Authorization: key=AIzaSyBbpKV4v-P6MDyV3zdVXQf19AaIbnBVfJQ" --header "Content-Type: application/json" -d '{
+  "to": "e6P0Nll0wwk:APA91bFql2jmS0IKonlDr5JvsAz3Wu3Z5dGYThcCaADkGCXJinyASSgiQL1wo7EfA89z3ALP0Rm_E1t90ZQjgOyFu_k6Jtm3HKM9Uxo9NS9M8m8m5vKUORBQcR4jrkpgTXbCTYH2EVny",
+  "notification": {
+    "title": "Hello",
+    "body":"World"
+    }
+}' "https://fcm.googleapis.com/fcm/send"
+資料
+curl --header "Authorization: key=AIzaSyBbpKV4v-P6MDyV3zdVXQf19AaIbnBVfJQ" --header "Content-Type: application/json" -d '{
+  "to": "e6P0Nll0wwk:APA91bFql2jmS0IKonlDr5JvsAz3Wu3Z5dGYThcCaADkGCXJinyASSgiQL1wo7EfA89z3ALP0Rm_E1t90ZQjgOyFu_k6Jtm3HKM9Uxo9NS9M8m8m5vKUORBQcR4jrkpgTXbCTYH2EVny",
+  "data": {
+    "status": "woohoo!!!",
+    }
+}' "https://fcm.googleapis.com/fcm/send"
+
+curl -X POST -H "Authorization: key=AIzaSyBbpKV4v-P6MDyV3zdVXQf19AaIbnBVfJQ" -H "Content-Type: application/json" -d '{
+  "notification": {
+    "title": "Chessy",
+    "body": "Hi:-)",
+    "icon": "./AA1900271徐嘉琪.jpg",
+    "click_action": "http://localhost:1234"
+  },
+  "to": "cVUAvaBESsU:APA91bG3_ePmn2EePz4OLYl_jFRWQSRnV4_VCSIr0WOai__CHNj3aZT9XHsqIKLmLvggWUaxel8L19XNvBznjUDNGrzGh_Q8FyYhrxP0edqcMuw_eDwJ6Ttwr4hwpIAlggE72e5LDHBF"
+}' "https://fcm.googleapis.com/fcm/send"
