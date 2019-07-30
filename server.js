@@ -25,6 +25,9 @@ app.get('/firebase-messaging-sw.js', (req, res) => {
 app.get('/fb.js', (req, res) => {
 	res.sendFile(__dirname + '/components/fb.js')
 })
+app.get('/send.js', (req, res) => {
+	res.sendFile(__dirname + '/send.js')
+})
 app.get('/firebase-logo.png', (req, res) => {
 	res.sendFile(__dirname + '/simple/firebase-logo.png')
 })
