@@ -30,3 +30,13 @@ curl -X POST -H "Authorization: key=AIzaSyBbpKV4v-P6MDyV3zdVXQf19AaIbnBVfJQ" -H 
   },
   "to": "cVUAvaBESsU:APA91bG3_ePmn2EePz4OLYl_jFRWQSRnV4_VCSIr0WOai__CHNj3aZT9XHsqIKLmLvggWUaxel8L19XNvBznjUDNGrzGh_Q8FyYhrxP0edqcMuw_eDwJ6Ttwr4hwpIAlggE72e5LDHBF"
 }' "https://fcm.googleapis.com/fcm/send"
+
+認證的東西移到上面了！！
+curl -X POST -H "Authorization: key=AIzaSyBbpKV4v-P6MDyV3zdVXQf19AaIbnBVfJQ" -H "Content-Type: application/json" -d '{
+  "data": {
+    "name": "Chessy",
+    "login": "徐嘉琪",
+    "githubID": "AA1900271",
+    "device": "12341234"
+  }
+}' "http://localhost:2345/v1/notification/register"
