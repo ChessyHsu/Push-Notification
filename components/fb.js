@@ -26,7 +26,6 @@ messaging.requestPermission()
 	console.log('Error occured');
 })
 console.log(Notification.permission);
-console.log(Notification.permission);
 
 messaging.onMessage(function(payload){
 	const title='有訊息喔٩(^ᴗ^)۶';
