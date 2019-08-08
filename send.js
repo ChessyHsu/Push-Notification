@@ -11,7 +11,8 @@ var registrationToken = 'cVUAvaBESsU:APA91bG3_ePmn2EePz4OLYl_jFRWQSRnV4_VCSIr0WO
 // These registration tokens come from the client FCM SDKs.
 var registrationTokens = [
   'cVUAvaBESsU:APA91bG3_ePmn2EePz4OLYl_jFRWQSRnV4_VCSIr0WOai__CHNj3aZT9XHsqIKLmLvggWUaxel8L19XNvBznjUDNGrzGh_Q8FyYhrxP0edqcMuw_eDwJ6Ttwr4hwpIAlggE72e5LDHBF',
-  'dS4sWzT_BD8:APA91bHvT92yEU8bB9CpiniSL5VcRfQQJSqAzrNvqsJVnDUPOzaktfKqy9JbrVjoND1oLx09-TKmMiVkCZ7cxv4GZiNcbFKs1pwgNFGjgALMsvccye-XXdT8W52NMpCngxuc0hGDB7e7'
+  'dS4sWzT_BD8:APA91bHvT92yEU8bB9CpiniSL5VcRfQQJSqAzrNvqsJVnDUPOzaktfKqy9JbrVjoND1oLx09-TKmMiVkCZ7cxv4GZiNcbFKs1pwgNFGjgALMsvccye-XXdT8W52NMpCngxuc0hGDB7e7',
+  '222'
 ];
 
 // // simple example
@@ -71,6 +72,17 @@ function send(tokens, msg){
   admin.messaging().sendToDevice(tokens, msg)
     .then((response) => {
       // Response is a message ID string.
+      console.log(JSON.stringify(response.results[0]).match('error')==null);
+      totalCount=response.failureCount+response.successCount;
+      console.log(totalCount);
+      for(var i=0; i<totalCount; i++){
+        if(JSON.stringify(response.results[i]).match('error')!=null){
+          console.log('error');
+        }
+        else{
+          console.log('^__^')
+        }
+      }
       console.log('Successfully sent message:', response);
     })
     .catch((error) => {

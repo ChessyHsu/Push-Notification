@@ -36,7 +36,7 @@ curl -X POST -H "Authorization: key=AIzaSyBbpKV4v-P6MDyV3zdVXQf19AaIbnBVfJQ" -H 
   "data": {
     "name": "Chessy",
     "login": "徐嘉琪",
-    "githubID": "AA1900271",
-    "device": "12341234"
+    "githubID": 1900271,
+    "device": "12345"
   }
 }' "http://localhost:2345/v1/notification/register"
