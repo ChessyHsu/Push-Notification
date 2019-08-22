@@ -36,7 +36,16 @@ curl -X POST -H "Authorization: key=AIzaSyBbpKV4v-P6MDyV3zdVXQf19AaIbnBVfJQ" -H 
   "data": {
     "name": "Chessy",
     "login": "徐嘉琪",
+    "githubID": 1900273,
+    "device": "dS4sWzT_BD8:APA91bHvT92yEU8bB9CpiniSL5VcRfQQJSqAzrNvqsJVnDUPOzaktfKqy9JbrVjoND1oLx09-TKmMiVkCZ7cxv4GZiNcbFKs1pwgNFGjgALMsvccye-XXdT8W52NMpCngxuc0hGDB7e7"
+  }
+}' "http://localhost:2345/v1/notification/register"
+
+curl -X POST -H "Authorization: key=AIzaSyBbpKV4v-P6MDyV3zdVXQf19AaIbnBVfJQ" -H "Content-Type: application/json" -d '{
+  "data": {
+    "name": "Chessy",
+    "login": "徐嘉琪",
     "githubID": 1900271,
-    "device": "12345"
+    "device": "hahahaha"
   }
 }' "http://localhost:2345/v1/notification/register"
